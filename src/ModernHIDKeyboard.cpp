@@ -13,6 +13,7 @@ void ModernHIDKeyboard::begin() {
   Serial.begin(9600);
 }
 
+// STANDART TUSLAR (ASCII tablosuna girenler)
 void ModernHIDKeyboard::pressKey(uint8_t modifier, uint8_t key) {
   uint8_t hidCode = HIDTable[key];
   if (hidCode == 0) return;
@@ -37,6 +38,27 @@ void ModernHIDKeyboard::releaseKey(uint8_t key) {
   Serial.write(this->buf, 8);
 }
 
+// OZEL TUSLAR (ASCII tablosunu pas gecenler)
+void ModernHIDKeyboard::pressSpecialKey(uint8_t modifier, uint8_t specialKey) {
+  this->buf[0] |= modifier;
+  for (int i = 2; i < 8; i++) {
+    if (this->buf[i] == specialKey) return;
+    if (this->buf[i] == 0) { this->buf[i] = specialKey; break; }
+  }
+  Serial.write(this->buf, 8);
+}
+
+void ModernHIDKeyboard::pressSpecialKey(uint8_t specialKey) {
+  pressSpecialKey(0, specialKey);
+}
+
+void ModernHIDKeyboard::releaseSpecialKey(uint8_t specialKey) {
+  for (int i = 2; i < 8; i++) {
+    if (this->buf[i] == specialKey) this->buf[i] = 0;
+  }
+  Serial.write(this->buf, 8);
+}
+
 void ModernHIDKeyboard::releaseAll() {
   for (int i = 0; i < 8; i++) buf[i] = 0;
   Serial.write(this->buf, 8);
@@ -53,6 +75,6 @@ void ModernHIDKeyboard::print(char* sequence) {
 
 void ModernHIDKeyboard::println(char* sequence) { 
   print(sequence);
-  pressKey(ENTER);
-  releaseKey(ENTER);
+  pressSpecialKey(0, ENTER);
+  releaseSpecialKey(ENTER);
 }
