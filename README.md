@@ -1,4 +1,4 @@
-### Modern-HIDKeyboard
+# Modern-HIDKeyboard
 
 Bu kütüphane, Arduino Uno kartlarını klavye olarak kullanan projelerdeki "aynı anda tuşa basamama" sorununu çözmek için geliştirilmiştir.
 
