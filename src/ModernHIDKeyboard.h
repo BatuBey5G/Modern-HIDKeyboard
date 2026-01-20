@@ -11,16 +11,16 @@
 
 #include "Arduino.h"
 
-// HID Values - Bu değerler direkt USB tarama kodlarıdır (Scan Codes)
-#define ENTER 0x28
-#define ESCAPE 0x29
-#define BACKSPACE 0x2a
-#define TAB 0x2b
-#define SPACEBAR 0x2c
-#define RIGHTARROW 0x4f
-#define LEFTARROW 0x50 
-#define DOWNARROW 0x51
-#define UPARROW 0x52
+// HID Values - Arduino Keyboard Library değerleri
+#define ENTER 0xB0
+#define ESCAPE 0xB1
+#define BACKSPACE 0xB2
+#define TAB 0xB3
+#define SPACEBAR 0x20
+#define RIGHTARROW 0xD7
+#define LEFTARROW 0xD8
+#define DOWNARROW 0xD9
+#define UPARROW 0xDA
 #define SHIFT 0x02
 
 class ModernHIDKeyboard {
