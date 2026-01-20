@@ -5,7 +5,7 @@ Bu kütüphane, Arduino Uno kartlarını klavye olarak kullanan projelerdeki "ay
 ## Neden Bu Kütüphane?
 Standart kütüphaneler genellikle her yeni tuş basımında eskisini siler. **Modern-HIDKeyboard** ise:
 - **6-Key Rollover:** Aynı anda 6 tuşu basılı tutabilir.
-- **Rhythm Game Ready:** Guitar Hero gibi oyunlarda notaların kesilmesini önler.
+Bu kadar. diğerlerinden başka özelliği yok.
 
 ## Nasıl Kullanılır?
 ```cpp
