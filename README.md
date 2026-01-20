@@ -5,6 +5,7 @@ Bu kütüphane, Arduino Uno kartlarını klavye olarak kullanan projelerdeki "ay
 ## Neden Bu Kütüphane?
 Standart kütüphaneler genellikle her yeni tuş basımında eskisini siler. **Modern-HIDKeyboard** ise:
 - **6-Key Rollover:** Aynı anda 6 tuşu basılı tutabilir.
+
 Bu kadar. diğerlerinden başka özelliği yok.
 
 ## Nasıl Kullanılır?
