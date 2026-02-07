@@ -54,3 +54,5 @@ void loop() {
   // Sadece A'yı bırak, S basılı kalsın
   keyboard.releaseKey('a');
 }
+
+```
