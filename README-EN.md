@@ -9,8 +9,7 @@ Standard keyboard libraries overwrite previous key presses. **Modern-HIDKeyboard
 - **Input Method Switching:** Planned feature
 
 ## How to Use
-
-> ⚠️ **Warning**
+> [!WARNING]
 > Works on original Arduino Uno boards.
 > Most clone boards do NOT support this (missing 16u2 pins).
 
