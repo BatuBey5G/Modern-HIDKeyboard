@@ -9,6 +9,7 @@ Standart kütüphaneler genellikle her yeni tuş basımında eskisini siler. **M
 - **Klavye Input Method Değiştirme:** Bu özellik üzerinde çalışıyorum, ileride eklenebilir.
 
 ## Nasıl Kullanılır?
+### Windows
 1. Atmel Flip uygulamasını indirin.
 2. Bu iki pini kısa devre yapın. <img width="912" height="490" alt="image" src="https://github.com/user-attachments/assets/4bef37d9-2aec-4194-81ce-6cac10da9b95" />
 3. Sol üstteki çip resmine tıklayın ve ATMEGA16u2 Çipini seçip OK'e basın. Eğer DFU işlemini doğru yaptıysanız en üstte çıkar.
