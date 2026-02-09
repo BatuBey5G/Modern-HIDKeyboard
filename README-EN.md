@@ -17,7 +17,8 @@ After uploading your `.ino` file:
 
 ### Windows
 1. Install Atmel Flip
-2. Short the two pins to enter DFU mode
+2. Short the two pins to enter DFU mode: <img width="371" height="303" alt="resim" src="https://github.com/user-attachments/assets/d2ca8f14-2830-420c-8d1f-273e16b523ee" />
+
 3. Select **ATMEGA16U2**
 4. CTRL+U → Open
 5. File → Load hex → `Arduino-keyboard-0.3.hex`
@@ -29,7 +30,8 @@ To revert, flash `Arduino-usbserial-uno.hex`.
 ### Linux
 1. Install dfu-programmer  
    `sudo pacman -S dfu-programmer` or `sudo apt install dfu-programmer`
-2. Enter DFU mode
+2. Short these 2 pins to Enter DFU mode: <img width="371" height="303" alt="resim" src="https://github.com/user-attachments/assets/5462dc94-5f8c-4636-8b9a-7638d78c896b" />
+
 3. `sudo dfu-programmer atmega16u2 get`
 4. `sudo dfu-programmer atmega16u2 erase`
 5. `sudo dfu-programmer atmega16u2 flash Arduino-keyboard-0.3.hex`
